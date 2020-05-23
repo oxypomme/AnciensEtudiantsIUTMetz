@@ -1,0 +1,17 @@
+on: 
+  push:
+    branches:
+    - master
+
+jobs:
+  FTP-Action:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Upload FTP
+      uses: sebastianpopp/ftp-action@v1.0.0
+      with: 
+        host: ftp.cluster027.hosting.ovh.net
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        remoteDir: "www/<nomici>"
