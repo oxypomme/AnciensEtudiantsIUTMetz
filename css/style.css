@@ -19,31 +19,35 @@ main {
     margin: 10% auto 0 auto;
     width: 50%;
 }
-header, body {
+
+header, 
+body {
     margin: 0;
 }
+
 header nav li {
     display: inline-block;
 }
-.main-nav>* {
+
+.main-nav > * {
     display: inline-block;
 }
+
 .main-nav {
     padding: 0;
 }
+
 .main-nav ul {
     flex: 4;
     margin: 0;
     padding: 0;
 }
-.social-nav li {
-    float: right;
-    margin: 1em 1em;
-}
+
 .main-nav li {
     float: left;
     padding: 0 5px;
 }
+
 .main-nav li a {
     line-height: 3em;
     font-weight: 100;
@@ -52,32 +56,44 @@ header nav li {
     text-decoration: none;
     padding: 1em 0;
 }
-.main-nav li a:hover {
-    text-decoration: black solid underline;
-}
-.main-nav li:not(:first-child) {
-    border-left: 1px solid black;
-}
-.main-nav:first-child {
-    float: left;
-    border-left: 0;
-}
+
+    .main-nav li a:hover {
+        text-decoration: black solid underline;
+    }
+
+    .main-nav li:not(:first-child) {
+        border-left: 1px solid black;
+    }
+
+    .main-nav:first-child {
+        float: left;
+        border-left: 0;
+    }
+
+    .main-nav:first-child img {
+        height: 5em;
+        padding: 0 2em;
+        background-color: white;
+    }    
+
 .social-nav {
     flex: 1;
     margin: 0 2em 0 0;
     padding: 0;
 }
+
+.social-nav li {
+    float: right;
+    margin: 1em 1em;
+}
+
+.social-nav img {
+    height: 2em;
+}
+
 header nav {
     display: flex;
     width: 100%;
     height: 5em;
     background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0.2) 100%);
-}
-.main-nav:first-child img {
-    height: 5em;
-    padding: 0 2em;
-    background-color: white;
-}
-.social-nav img {
-    height: 2em;
 }
