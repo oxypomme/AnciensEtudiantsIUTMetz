@@ -95,6 +95,7 @@ header nav li,
 
 .social-nav img {
     height: 2em;
+    border-radius: 10%;
 }
 
 header nav {
