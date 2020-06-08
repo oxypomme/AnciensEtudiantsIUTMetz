@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
+    position: relative;
     background-image: url("https://scontent-cdt1-1.xx.fbcdn.net/v/t31.0-8/s960x960/22382420_1454564661317197_6448945113044088703_o.jpg?_nc_cat=105&_nc_sid=dd9801&_nc_ohc=frWs3j1DdlwAX83EYxe&_nc_ht=scontent-cdt1-1.xx&_nc_tp=7&oh=650d9e879e0ded90123f19fd4d6dbc81&oe=5F032618");
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    margin: 0;
+    padding: 0;
 }
+
 main {
     margin: 10% auto 0 auto;
     width: 50%;
