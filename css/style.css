@@ -30,26 +30,24 @@ main {
 }
 
 header, 
-body {
+body,
+.main-nav ul {
     margin: 0;
 }
 
-header nav li {
-    display: inline-block;
-}
-
+header nav li,
 .main-nav > * {
     display: inline-block;
 }
 
-.main-nav {
+.main-nav,
+.main-nav ul,
+.social-nav  {
     padding: 0;
 }
 
 .main-nav ul {
     flex: 4;
-    margin: 0;
-    padding: 0;
 }
 
 .main-nav li {
@@ -88,7 +86,6 @@ header nav li {
 .social-nav {
     flex: 1;
     margin: 0 2em 0 0;
-    padding: 0;
 }
 
 .social-nav li {
