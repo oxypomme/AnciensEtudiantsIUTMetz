@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
-:root{
+:root {
     --background-image: url("https://scontent-cdt1-1.xx.fbcdn.net/v/t31.0-8/s960x960/22382420_1454564661317197_6448945113044088703_o.jpg?_nc_cat=105&_nc_sid=dd9801&_nc_ohc=frWs3j1DdlwAX83EYxe&_nc_ht=scontent-cdt1-1.xx&_nc_tp=7&oh=650d9e879e0ded90123f19fd4d6dbc81&oe=5F032618");
     --text-color: black;
 
     --nav-image-bg-color: white;
-    --nav-background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0.2) 100%);
+    --nav-background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.2) 100%);
+    --footer-background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.6) 100%);
     --nav-border: black;
 }
 
@@ -29,20 +30,20 @@ main {
     width: 50%;
 }
 
-header, 
+header,
 body,
 .main-nav ul {
     margin: 0;
 }
 
 header nav li,
-.main-nav > * {
+.main-nav>* {
     display: inline-block;
 }
 
 .main-nav,
 .main-nav ul,
-.social-nav  {
+.social-nav {
     padding: 0;
 }
 
@@ -64,24 +65,24 @@ header nav li,
     padding: 1em 0;
 }
 
-    .main-nav li a:hover {
-        text-decoration: var(--text-color) solid underline;
-    }
+.main-nav li a:hover {
+    text-decoration: var(--text-color) solid underline;
+}
 
-    .main-nav li:not(:first-child) {
-        border-left: 1px solid var(--nav-border);
-    }
+.main-nav li:not(:first-child) {
+    border-left: 1px solid var(--nav-border);
+}
 
-    .main-nav:first-child {
-        float: left;
-        border-left: 0;
-    }
+.main-nav:first-child {
+    float: left;
+    border-left: 0;
+}
 
-    .main-nav:first-child img {
-        height: 5em;
-        padding: 0 2em;
-        background-color: var(--nav-image-bg-color);
-    }    
+.main-nav:first-child img {
+    height: 5em;
+    padding: 0 2em;
+    background-color: var(--nav-image-bg-color);
+}
 
 .social-nav {
     flex: 1;
@@ -103,4 +104,52 @@ header nav {
     width: 100%;
     height: 5em;
     background: var(--nav-background);
+}
+footer img {
+    height: 3em;
+}
+footer {
+    display: flex;
+    background: var(--footer-background);
+    padding: .5em;
+}
+footer>*:first-child {
+    flex : 20;
+}
+footer>*:nth-child(2) {
+    flex : 1;
+    border-left: solid 1px black;
+}
+footer>*:last-child {
+    flex : 5;
+}
+footer * {
+    margin: 0;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline black solid;
+}
+footer a:hover img {
+    animation-name: tuile;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body>header, body>main {
+    flex: 1;
+}
+footer {
+    flex-shrink: 0;
+}
+@keyframes tuile {
+    from {transform: none;}
+    to {transform: rotate3d(1.5, -1, 0, 20deg);}
 }
