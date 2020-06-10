@@ -18,6 +18,7 @@
 body {
     position: relative;
     background-image: var(--background-image);
+    background-attachment: fixed;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -27,7 +28,7 @@ body {
 
 main {
     margin: 10% auto 0 auto;
-    width: 50%;
+    width: 75%;
 }
 
 header,
@@ -99,6 +100,11 @@ header nav li,
     border-radius: 10%;
 }
 
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
 header nav {
     display: flex;
     width: 100%;
@@ -149,6 +155,36 @@ body>header, body>main {
 footer {
     flex-shrink: 0;
 }
+main>a {
+    color: black;
+}
+main section {
+    width: 30vw;
+    height: 30vw;
+    background-color: yellow;
+    margin: 1em;
+    display: inline-block;
+}
+main section h1 {
+    margin: 1em 0 1em 1em;
+}
+main section p {
+    margin: 2em;
+}
+main section img {
+    float: right;
+    margin: 1em;
+    max-width: 60%;
+    max-height: 60%;
+}
+main section:hover {
+    animation-name: tuile;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+/*********************************/
 @keyframes tuile {
     from {transform: none;}
     to {transform: rotate3d(1.5, -1, 0, 20deg);}
