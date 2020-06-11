@@ -1,17 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-
-:root {
-    --background-image: url("https://scontent-cdt1-1.xx.fbcdn.net/v/t31.0-8/s960x960/22382420_1454564661317197_6448945113044088703_o.jpg?_nc_cat=105&_nc_sid=dd9801&_nc_ohc=frWs3j1DdlwAX83EYxe&_nc_ht=scontent-cdt1-1.xx&_nc_tp=7&oh=650d9e879e0ded90123f19fd4d6dbc81&oe=5F032618");
-    --text-color: black;
-
-    --nav-image-bg-color: white;
-    --nav-background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.2) 100%);
-    --footer-background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.6) 100%);
-    --border-color: black;
-    --link-color: black;
-    --actus-bg-color: yellow;
-}
-
 * {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -22,7 +8,7 @@ body {
     background-image: var(--background-image);
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     font-weight: 300;
     margin: 0;
     padding: 0;
