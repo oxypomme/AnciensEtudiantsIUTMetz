@@ -7,7 +7,9 @@
     --nav-image-bg-color: white;
     --nav-background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.2) 100%);
     --footer-background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.6) 100%);
-    --nav-border: black;
+    --border-color: black;
+    --link-color: black;
+    --actus-bg-color: yellow;
 }
 
 * {
@@ -32,13 +34,13 @@ main {
 }
 
 main > a {
-    color: black;
+    color: var(--link-color);
 }
 
 main section {
     width: 30vw;
     height: 30vw;
-    background-color: yellow;
+    background-color: var(--actus-bg-color);
     margin: 1em;
     display: inline-block;
 }
@@ -58,12 +60,12 @@ main section img {
     max-height: 60%;
 }
 
-main section:hover {
-    animation-name: tuile;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-    z-index: 1;
-}
+    main section:hover {
+        animation-name: tuile;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        z-index: 1;
+    }
 
 header,
 body,
@@ -105,7 +107,7 @@ header nav li,
 }
 
 .main-nav li:not(:first-child) {
-    border-left: 1px solid var(--nav-border);
+    border-left: 1px solid var(--border-color);
 }
 
 .main-nav:first-child {
@@ -163,12 +165,12 @@ footer img {
 }
 
 footer a {
-    color: black;
+    color: var(--border-color);
     text-decoration: none;
 }
 
     footer a:hover {
-        text-decoration: underline black solid;
+        text-decoration: underline var(--link-color) solid;
     }
 
     footer a:hover img {
@@ -183,7 +185,7 @@ footer > *:first-child {
 
 footer > *:nth-child(2) {
     flex : 1;
-    border-left: solid 1px black;
+    border-left: solid 1px var(--border-color);
 }
 
 footer > *:last-child {
