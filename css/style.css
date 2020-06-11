@@ -31,6 +31,40 @@ main {
     width: 75%;
 }
 
+main > a {
+    color: black;
+}
+
+main section {
+    width: 30vw;
+    height: 30vw;
+    background-color: yellow;
+    margin: 1em;
+    display: inline-block;
+}
+
+main section h1 {
+    margin: 1em 0 1em 1em;
+}
+
+main section p {
+    margin: 2em;
+}
+
+main section img {
+    float: right;
+    margin: 1em;
+    max-width: 60%;
+    max-height: 60%;
+}
+
+main section:hover {
+    animation-name: tuile;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
 header,
 body,
 .main-nav ul {
@@ -105,86 +139,72 @@ header {
     width: 100vw;
     z-index: 10;
 }
+
 header nav {
     display: flex;
     width: 100%;
     height: 5em;
     background: var(--nav-background);
 }
-footer img {
-    height: 3em;
-}
+
 footer {
     display: flex;
     background: var(--footer-background);
     padding: .5em;
+    flex-shrink: 0;
 }
-footer>*:first-child {
-    flex : 20;
-}
-footer>*:nth-child(2) {
-    flex : 1;
-    border-left: solid 1px black;
-}
-footer>*:last-child {
-    flex : 5;
-}
+
 footer * {
     margin: 0;
 }
+
+footer img {
+    height: 3em;
+}
+
 footer a {
     color: black;
     text-decoration: none;
 }
-footer a:hover {
-    text-decoration: underline black solid;
+
+    footer a:hover {
+        text-decoration: underline black solid;
+    }
+
+    footer a:hover img {
+        animation-name: tuile;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+
+footer > *:first-child {
+    flex : 20;
 }
-footer a:hover img {
-    animation-name: tuile;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
+
+footer > *:nth-child(2) {
+    flex : 1;
+    border-left: solid 1px black;
 }
-body, html {
+
+footer > *:last-child {
+    flex : 5;
+}
+
+
+body, 
+html {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
-body>header, body>main {
+
+body > header,
+body > main {
     flex: 1;
-}
-footer {
-    flex-shrink: 0;
-}
-main>a {
-    color: black;
-}
-main section {
-    width: 30vw;
-    height: 30vw;
-    background-color: yellow;
-    margin: 1em;
-    display: inline-block;
-}
-main section h1 {
-    margin: 1em 0 1em 1em;
-}
-main section p {
-    margin: 2em;
-}
-main section img {
-    float: right;
-    margin: 1em;
-    max-width: 60%;
-    max-height: 60%;
-}
-main section:hover {
-    animation-name: tuile;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-    z-index: 1;
 }
 
 /*********************************/
+
 @keyframes tuile {
     from {transform: none;}
     to {transform: rotate3d(1.5, -1, 0, 20deg);}
