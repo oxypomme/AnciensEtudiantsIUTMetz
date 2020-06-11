@@ -5,7 +5,7 @@
 
 body {
     position: relative;
-    background-image: var(--background-image);
+    background: var(--background-image);
     background-attachment: fixed;
     background-size: cover;
     font-family: var(--main-font);
@@ -140,6 +140,7 @@ footer {
     background: var(--footer-background);
     padding: .5em;
     flex-shrink: 0;
+    color: var(--text-color);
 }
 
 footer * {
@@ -151,7 +152,7 @@ footer img {
 }
 
 footer a {
-    color: var(--border-color);
+    color: var(--text-color);
     text-decoration: none;
 }
 

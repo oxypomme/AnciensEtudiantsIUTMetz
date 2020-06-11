@@ -1,3 +1,37 @@
-:root{
-    --background-image: linear-gradient(to bottom, #222222, #111111);
+:root {
+    --main-font: Arial,Helvetica,sans-serif;
+    --background-image: #555555;
+    --text-color: white;
+
+    --nav-image-bg-color: white;
+    --nav-background: linear-gradient(to bottom, #222222, #111111);
+    --footer-background: linear-gradient(to bottom, #222222, #111111);
+    --border-color: transparent;
+    --link-color: #245874;
+    --actus-bg-color: #cccccc;
+
+    --active-tab: #111111;
+}
+
+main{
+    background: #eeeeee;
+    box-shadow: 4px 4px 4px #222222;
+    border: solid 10px white;
+}
+
+main section{
+    border-radius: 5px;
+}
+
+.main-nav li a {
+    color: var(--background-image) !important;
+}
+
+    .main-nav li a:hover {
+        text-decoration: none !important;
+        color: var(--text-color) !important;
+    }
+
+nav {
+    font-size: 14px;
 }
