@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    margin: 10% auto 0 auto;
+    margin: 4% auto 0 auto;
     width: 75%;
 }
 
@@ -196,5 +196,5 @@ body > main {
 
 @keyframes tuile {
     from {transform: none;}
-    to {transform: rotate3d(1.5, -1, 0, 20deg);}
+    to {transform: scale(1.05);}
 }
