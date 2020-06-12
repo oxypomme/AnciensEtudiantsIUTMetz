@@ -31,10 +31,19 @@
             </a>
         </li>
         <li>
-            <label> <!--TODO: Clément fait le script stp-->
+            <label>
                 <input type="checkbox" name="versionSite"/>
                 <a>Version</a>
             </label>
+            <script>
+                //TODO CLEMENT : save via cookie
+                $('label input[name=versionSite]').change(function(){
+                    if ($('label input[name=versionSite]').is(":checked")) 
+                        $('link[title="version"]').attr('href','css/iut.css');
+                    else
+                        $('link[title="version"]').attr('href','css/custom.css');
+                })
+            </script>
         </li>
     </ul>
 </nav>
