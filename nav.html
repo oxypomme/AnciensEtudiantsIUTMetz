@@ -36,13 +36,54 @@
                 <a>Version</a>
             </label>
             <script>
-                //TODO CLEMENT : save via cookie
-                $('label input[name=versionSite]').change(function(){
-                    if ($('label input[name=versionSite]').is(":checked")) 
+                var saveDuration = 3; // in days
+
+                $(document).ready(function(){
+                    if (getCookie("versionSite") == "1") // iut
+                        $("label input[name=versionSite]").prop('checked', true);
+                    else { // custom
+                        setCookie("versionSite", 0, saveDuration);
+                        $("label input[name=versionSite]").prop('checked', false);
+                    }
+                    setVersion()
+                })
+
+                function setVersion() {
+                    if (getCookie("versionSite") == "1")
                         $('link[title="version"]').attr('href','css/iut.css');
                     else
                         $('link[title="version"]').attr('href','css/custom.css');
+                }
+
+                $('label input[name=versionSite]').change(function(){
+                    setCookie("versionSite", ($('label input[name=versionSite]').is(":checked") ? 1 : 0), saveDuration);
+                    setVersion();
                 })
+
+                function setCookie(cookieName, cookieValue, day) {
+                    if (day != -1) { // -1 mean that the cookie will be deleted after the navigator gets closed
+                        var d = new Date();
+                        d.setTime(d.getTime() + (day * 24 * 60 * 60 * 1000));
+                        var expires = ";expires=" + d.toUTCString();    
+                    } else {
+                        var expires = "";
+                    }
+                    
+                    document.cookie = cookieName + "=" + cookieValue + expires + ";path=/";
+                }
+
+                function getCookie(cookieName) {
+                    var name = cookieName + "=";
+                    var cookieTable = document.cookie.split(';');
+                    for(var i = 0; i < cookieTable.length; i++) {
+                        var c = cookieTable[i];
+                        while (c.charAt(0) == ' ') 
+                            c = c.substring(1);
+                        if (c.indexOf(name) == 0) 
+                            return c.substring(name.length, c.length);
+                    }
+                    return null;
+                }
             </script>
         </li>
     </ul>
