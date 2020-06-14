@@ -35,3 +35,6 @@ main section{
 nav {
     font-size: 14px;
 }
+input+a {
+    color: white;
+}
