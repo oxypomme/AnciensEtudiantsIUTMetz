@@ -213,7 +213,7 @@ form a:hover {
     float: right;
 }
 
-.source img {
+.ext-link {
     height: 1em;
     filter: var(--link-filter);
 }
