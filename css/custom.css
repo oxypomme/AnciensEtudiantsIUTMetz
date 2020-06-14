@@ -51,6 +51,7 @@ main.articles {
 main>a {
     display: inline-block;
     margin: 1em;
+    height: min-content;
 }
 
 main section>img {
