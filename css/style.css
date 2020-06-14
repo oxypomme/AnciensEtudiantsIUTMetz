@@ -15,12 +15,13 @@ body {
 }
 
 main {
-    margin: 4% auto 0 auto;
+    margin: 6% auto 0 auto;
     width: 75%;
 }
 
-main>a {
+a {
     color: var(--link-color);
+    text-decoration: none;
 }
 
 header,
@@ -190,5 +191,8 @@ form a:hover {
     background-color: var(--text-color);
     border-color: var(--button-color);
 }
-/*********************************/
 
+.link {
+    height: 1em;
+    filter: var(--link-filter);
+}

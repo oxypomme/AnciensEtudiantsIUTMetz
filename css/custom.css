@@ -9,9 +9,10 @@
     --nav-background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.2) 100%);
     --footer-background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.6) 100%);
     --border-color: black;
-    --link-color: black;
+    --link-color: #00214d;
     --actus-bg-color: yellow;
     --button-color: yellow;
+    --link-filter: invert(9%) sepia(30%) saturate(6931%) hue-rotate(202deg) brightness(98%) contrast(105%);
 
     --active-tab: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.5) 100%);
 }
@@ -53,7 +54,6 @@ main section:hover {
     animation-fill-mode: forwards;
     z-index: 1;
 }
-
 
 @keyframes tuile {
     from {

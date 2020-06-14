@@ -10,6 +10,7 @@
     --link-color: #245874;
     --actus-bg-color: #cccccc;
     --button-color: #245874;
+    --link-filter: invert(27%) sepia(68%) saturate(444%) hue-rotate(157deg) brightness(93%) contrast(92%);
 
     --active-tab: #111111;
 }
@@ -20,7 +21,7 @@ main {
     border: solid 10px white;
 }
 
-main>a {
+a {
     text-decoration: none;
 }
 
@@ -60,6 +61,3 @@ nav {
     font-size: 14px;
 }
 
-main section p>img {
-    filter: invert(27%) sepia(68%) saturate(444%) hue-rotate(157deg) brightness(93%) contrast(92%);
-}
