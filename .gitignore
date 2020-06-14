@@ -1,2 +1,3 @@
 # VS Code files
 .vscode/
+*.ini
