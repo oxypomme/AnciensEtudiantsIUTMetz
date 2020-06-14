@@ -229,6 +229,10 @@ form a:hover {
     background-color: var(--text-color);
     border-color: var(--button-color);
 }
+
+.source {
+    float: right;
+}
 /*********************************/
 
 @keyframes tuile {
