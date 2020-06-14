@@ -35,8 +35,8 @@
         </li>
         <li>
             <label>
-                <input type="checkbox" name="versionSite"/>
-                <a>Version</a>
+                <input type="checkbox" name="versionSite" style="display: none;"/>
+                <a style="cursor: pointer">Version : IUT</a>
             </label>
             <script>
                 var saveDuration = 3; // in days
@@ -52,10 +52,14 @@
                 })
 
                 function setVersion() {
-                    if (getCookie("versionSite") == "1")
+                    if (getCookie("versionSite") == "1") {
                         $('link[title="version"]').attr('href','css/iut.css');
-                    else
+                        $('label input[name=versionSite] ~ a').html('Version : IUT');
+                    } else {
                         $('link[title="version"]').attr('href','css/custom.css');
+                        $('label input[name=versionSite] ~ a').html('Version : CUSTOM');
+
+                    }
                 }
 
                 $('label input[name=versionSite]').change(function(){
