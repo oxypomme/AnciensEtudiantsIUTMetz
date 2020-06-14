@@ -9,6 +9,7 @@
     --border-color: transparent;
     --link-color: #245874;
     --actus-bg-color: #cccccc;
+    --button-color: #245874;
 
     --active-tab: #111111;
 }
@@ -34,9 +35,6 @@ main section{
 
 nav {
     font-size: 14px;
-}
-input+a {
-    color: white;
 }
 main section p>img {
     filter: invert(27%) sepia(68%) saturate(444%) hue-rotate(157deg) brightness(93%) contrast(92%);

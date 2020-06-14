@@ -197,6 +197,34 @@ body>main {
     flex: 1;
 }
 
+input+a {
+    color: var(--text-color);
+}
+
+main>article {
+    width: 75%;
+    margin: 2em auto;
+    background-color: var(--nav-image-bg-color);
+    padding: 3em;
+}
+
+form>* {
+    display: block;
+    margin: 1em;
+}
+
+form a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: .5em;
+    background-color: var(--button-color);
+    border: var(--border-color) solid 1px;
+}
+form a:hover {
+    color: var(--button-color);
+    background-color: var(--text-color);
+    border-color: var(--button-color);
+}
 /*********************************/
 
 @keyframes tuile {
