@@ -19,7 +19,7 @@ main {
     width: 75%;
 }
 
-main > a {
+main>a {
     color: var(--link-color);
 }
 
@@ -39,19 +39,24 @@ main section p {
     margin: 2em;
 }
 
-main section img {
+main section p+img {
     float: right;
     margin: 1em;
     max-width: 60%;
     max-height: 60%;
 }
 
-    main section:hover {
-        animation-name: tuile;
-        animation-duration: .5s;
-        animation-fill-mode: forwards;
-        z-index: 1;
-    }
+main section p>img {
+    height: 1em;
+    padding-left: 1em;
+}
+
+main section:hover {
+    animation-name: tuile;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
 
 header,
 body,
@@ -156,45 +161,50 @@ footer a {
     text-decoration: none;
 }
 
-    footer a:hover {
-        text-decoration: underline var(--link-color) solid;
-    }
-
-    footer a:hover img {
-        animation-name: tuile;
-        animation-duration: .5s;
-        animation-fill-mode: forwards;
-    }
-
-footer > *:first-child {
-    flex : 20;
+footer a:hover {
+    text-decoration: underline var(--link-color) solid;
 }
 
-footer > *:nth-child(2) {
-    flex : 1;
+footer a:hover img {
+    animation-name: tuile;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+footer>*:first-child {
+    flex: 20;
+}
+
+footer>*:nth-child(2) {
+    flex: 1;
     border-left: solid 1px var(--border-color);
 }
 
-footer > *:last-child {
-    flex : 5;
+footer>*:last-child {
+    flex: 5;
 }
 
 
-body, 
+body,
 html {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-body > header,
-body > main {
+body>header,
+body>main {
     flex: 1;
 }
 
 /*********************************/
 
 @keyframes tuile {
-    from {transform: none;}
-    to {transform: scale(1.05);}
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: scale(1.05);
+    }
 }

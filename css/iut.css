@@ -38,3 +38,6 @@ nav {
 input+a {
     color: white;
 }
+main section p>img {
+    filter: invert(27%) sepia(68%) saturate(444%) hue-rotate(157deg) brightness(93%) contrast(92%);
+}
