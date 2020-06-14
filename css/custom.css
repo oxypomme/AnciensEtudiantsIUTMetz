@@ -26,6 +26,10 @@ main section {
     box-shadow: 4px 4px 4px #00000050;
 }
 
+a:hover {
+    text-decoration: var(--link-color) solid underline;
+}
+
 .white-background {
     background-color: rgba(255, 255, 255, .9);
     padding: 1em;

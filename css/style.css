@@ -177,7 +177,15 @@ main>article {
     background-color: var(--nav-image-bg-color);
     padding: 3em;
 }
-
+article {
+    overflow: hidden;
+}
+article>img {
+    float: right;
+    max-width: 30%;
+    max-height: 30%;
+    border: var(--border-color) solid 1px;
+}
 main section p{
     text-align: justify;
 }
@@ -195,6 +203,7 @@ form a {
     border: var(--border-color) solid 1px;
 }
 form a:hover {
+    text-decoration: none;
     color: var(--button-color);
     background-color: var(--text-color);
     border-color: var(--button-color);
