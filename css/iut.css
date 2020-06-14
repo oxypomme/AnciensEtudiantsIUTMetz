@@ -1,5 +1,5 @@
 :root {
-    --main-font: Arial,Helvetica,sans-serif;
+    --main-font: Arial, Helvetica, sans-serif;
     --background-image: #555555;
     --text-color: white;
 
@@ -14,28 +14,57 @@
     --active-tab: #111111;
 }
 
-main{
+main {
     background: #eeeeee;
     box-shadow: 4px 4px 4px #222222;
     border: solid 10px white;
 }
 
-main section{
+main>a {
+    text-decoration: none;
+}
+
+main section {
+    overflow: hidden;
     border-radius: 5px;
+    background-color: var(--actus-bg-color);
+    margin: 1em;
+}
+
+main section h1 {
+    margin: 1em 0 1em 1em;
+}
+
+main section p {
+    margin: 2em;
+}
+
+main section>img {
+    position: relative;
+    float: right;
+    margin: 1em;
+    max-width: 15em;
+    max-height: 10em;
+}
+
+main section p>img {
+    height: 1em;
+    padding-left: 1em;
 }
 
 .main-nav li a {
     color: var(--background-image) !important;
 }
 
-    .main-nav li a:hover {
-        text-decoration: none !important;
-        color: var(--text-color) !important;
-    }
+.main-nav li a:hover {
+    text-decoration: none !important;
+    color: var(--text-color) !important;
+}
 
 nav {
     font-size: 14px;
 }
+
 main section p>img {
     filter: invert(27%) sepia(68%) saturate(444%) hue-rotate(157deg) brightness(93%) contrast(92%);
 }

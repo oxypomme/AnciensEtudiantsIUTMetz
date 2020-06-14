@@ -15,3 +15,52 @@
 
     --active-tab: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.5) 100%);
 }
+
+main section {
+    width: 32vw;
+    height: 15vw;
+    background-color: var(--actus-bg-color);
+    display: inline-block;
+}
+
+main section h1 {
+    margin: 1em 0 1em 1em;
+}
+
+main section p {
+    margin: 2em;
+}
+
+main>a {
+    display: inline-block;
+    margin: 1em;
+}
+
+main section>img {
+    float: right;
+    margin: 1em;
+    max-width: 40%;
+}
+
+main section p>img {
+    height: 1em;
+    padding-left: 1em;
+}
+
+main section:hover {
+    animation-name: tuile;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+
+@keyframes tuile {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
