@@ -18,7 +18,7 @@
 
 main section {
     width: 32vw;
-    height: 15vw;
+    min-height: 15vw;
     background-color: var(--actus-bg-color);
     display: inline-block;
 }
@@ -29,6 +29,11 @@ main section h1 {
 
 main section p {
     margin: 2em;
+}
+
+main.articles {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main>a {

@@ -177,6 +177,10 @@ main>article {
     padding: 3em;
 }
 
+main section p{
+    text-align: justify;
+}
+
 form>* {
     display: block;
     margin: 1em;
