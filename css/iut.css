@@ -47,11 +47,6 @@ main section>img {
     max-height: 10em;
 }
 
-main section p>img {
-    height: 1em;
-    padding-left: 1em;
-}
-
 .main-nav li a {
     color: var(--background-image) !important;
 }

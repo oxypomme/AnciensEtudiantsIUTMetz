@@ -23,6 +23,11 @@ main section {
     display: inline-block;
 }
 
+.white-background {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 1em;
+}
+
 main section h1 {
     margin: 1em 0 1em 1em;
 }
@@ -40,11 +45,6 @@ main section>img {
     float: right;
     margin: 1em;
     max-width: 40%;
-}
-
-main section p>img {
-    height: 1em;
-    padding-left: 1em;
 }
 
 main section:hover {
