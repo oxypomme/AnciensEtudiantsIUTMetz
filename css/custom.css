@@ -23,7 +23,7 @@ main section {
     min-height: 15vw;
     background-color: var(--actus-bg-color);
     display: inline-block;
-    box-shadow: 4px 4px 4px #22222270;
+    box-shadow: 4px 4px 4px #00000050;
 }
 
 .white-background {
