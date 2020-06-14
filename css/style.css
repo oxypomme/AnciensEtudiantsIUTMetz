@@ -200,7 +200,7 @@ form a:hover {
     float: right;
 }
 
-.link {
+.source img {
     height: 1em;
     filter: var(--link-filter);
 }
