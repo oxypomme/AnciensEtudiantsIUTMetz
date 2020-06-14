@@ -12,6 +12,8 @@
     --link-color: black;
     --actus-bg-color: #fbeb4b;
     --button-color: #fbeb4b;
+    --link-color: #00214d;
+    --link-filter: invert(9%) sepia(30%) saturate(6931%) hue-rotate(202deg) brightness(98%) contrast(105%);
 
     --active-tab: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.5) 100%);
 }
@@ -21,6 +23,11 @@ main section {
     min-height: 15vw;
     background-color: var(--actus-bg-color);
     display: inline-block;
+}
+
+.white-background {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 1em;
 }
 
 main section h1 {
@@ -47,18 +54,12 @@ main section>img {
     max-width: 40%;
 }
 
-main section p>img {
-    height: 1em;
-    padding-left: 1em;
-}
-
 main section:hover {
     animation-name: tuile;
     animation-duration: .5s;
     animation-fill-mode: forwards;
     z-index: 1;
 }
-
 
 @keyframes tuile {
     from {
