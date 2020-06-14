@@ -10,8 +10,8 @@
     --footer-background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.6) 100%);
     --border-color: black;
     --link-color: black;
-    --actus-bg-color: yellow;
-    --button-color: yellow;
+    --actus-bg-color: #fbeb4b;
+    --button-color: #fbeb4b;
 
     --active-tab: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.5) 100%);
 }
