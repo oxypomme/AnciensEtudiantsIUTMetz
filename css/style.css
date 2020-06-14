@@ -88,6 +88,10 @@ header nav li,
     margin: 1.5em 1em;
 }
 
+.social-nav li label input[name=versionSite] ~ a {
+    line-height: 2em;
+}
+
 .social-nav img {
     height: 2em;
     border-radius: 10%;
@@ -190,6 +194,10 @@ form a:hover {
     color: var(--button-color);
     background-color: var(--text-color);
     border-color: var(--button-color);
+}
+
+.source {
+    float: right;
 }
 
 .link {
