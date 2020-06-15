@@ -59,10 +59,6 @@ header nav li,
     padding: 1em 0;
 }
 
-.main-nav li a:hover {
-    text-decoration: var(--text-color) solid underline;
-}
-
 .main-nav li:not(:first-child) {
     border-left: 1px solid var(--border-color);
 }
@@ -131,16 +127,6 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline var(--link-color) solid;
-}
-
-footer a:hover img {
-    animation-name: tuile;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-}
-
 footer>*:first-child {
     flex: 20;
 }
@@ -177,15 +163,18 @@ main>article {
     background-color: var(--nav-image-bg-color);
     padding: 3em;
 }
+
 article {
     overflow: hidden;
 }
+
 article>img {
     float: right;
     max-width: 30%;
     max-height: 30%;
     border: var(--border-color) solid 1px;
 }
+
 main section p{
     text-align: justify;
 }
@@ -202,12 +191,6 @@ form a {
     background-color: var(--button-color);
     border: var(--border-color) solid 1px;
 }
-form a:hover {
-    text-decoration: none;
-    color: var(--button-color);
-    background-color: var(--text-color);
-    border-color: var(--button-color);
-}
 
 .source {
     float: right;
@@ -216,4 +199,34 @@ form a:hover {
 .ext-link {
     height: 1em;
     filter: var(--link-filter);
+}
+
+@media screen and (min-width:1081px) {
+    .main-nav li a:hover {
+        text-decoration: var(--text-color) solid underline;
+    }
+    
+    footer a:hover {
+        text-decoration: underline var(--link-color) solid;
+    }
+    
+    footer a:hover img {
+        animation-name: tuile;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+
+    form a:hover {
+        text-decoration: none;
+        color: var(--button-color);
+        background-color: var(--text-color);
+        border-color: var(--button-color);
+    }
+}
+/*Mobile*/
+@media screen and (max-width:1080px) {
+    main > a,
+    main > a section {
+        width: 95%;
+    }
 }
