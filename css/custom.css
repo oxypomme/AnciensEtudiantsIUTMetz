@@ -75,6 +75,7 @@ main section>img {
     float: right;
     margin: 1em;
     max-width: 40%;
+    min-width: 30%;
 }
 
 main section:hover {
