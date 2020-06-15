@@ -11,6 +11,9 @@
     --border-color: black;
     --link-color: black;
     --actus-bg-color: #fbeb4b;
+    --actus-bg-color-2: #00b3d3;
+    --actus-bg-color-3: #009272;
+    --actus-bg-color-4: #585858;
     --button-color: #fbeb4b;
     --link-color: #00214d;
     --link-filter: invert(9%) sepia(30%) saturate(6931%) hue-rotate(202deg) brightness(98%) contrast(105%);
@@ -18,14 +21,28 @@
     --active-tab: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.5) 100%);
 }
 
-main section {
+main>a section {
     width: 32vw;
     min-height: 15vw;
-    background-color: var(--actus-bg-color);
     display: inline-block;
     box-shadow: 4px 4px 4px #00000050;
 }
-
+main>a:nth-child(4n+1) section {
+    color: black;
+    background-color: var(--actus-bg-color);
+}
+main>a:nth-child(4n+2) section {
+    color: black;
+    background-color: var(--actus-bg-color-2);
+}
+main>a:nth-child(4n+3) section {
+    color: white;
+    background-color: var(--actus-bg-color-3);
+}
+main>a:nth-child(4n+4) section {
+    color: white;
+    background-color: var(--actus-bg-color-4);
+}
 a:hover {
     text-decoration: var(--link-color) solid underline;
 }
