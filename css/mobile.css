@@ -134,3 +134,7 @@ footer a {
     text-decoration: none;
 }
 
+.ext-link {
+    height: 1em;
+    filter: var(--link-filter);
+}
