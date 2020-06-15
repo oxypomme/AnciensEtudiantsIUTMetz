@@ -98,6 +98,10 @@ article {
     overflow: hidden;
 }
 
+article > img{
+    max-width: 200px;
+}
+
 form > * {
     display: block;
     margin: 1em;
