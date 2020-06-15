@@ -39,7 +39,7 @@ main>a:nth-child(4n+3) section {
     color: white;
     background-color: var(--actus-bg-color-3);
 }
-main>a:nth-child(4n+4) section {
+main>a:nth-child(4n) section {
     color: white;
     background-color: var(--actus-bg-color-4);
 }
