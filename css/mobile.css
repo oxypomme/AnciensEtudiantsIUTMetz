@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+}
+
+body {
+    background: var(--background-image);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: var(--main-font);
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background: var(--nav-background);
+}
+
+nav img{
+    height: 2em;
+}
+
+nav div:first-child li a{
+    color: var(--text-color);
+    font-size: 1.15em;
+}
+
+nav div:first-child img{
+    height: 5em;
+}
+
+nav > ul:last-child{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav > ul:last-child li{
+    margin: 0 0.5em;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+input+a {
+    color: var(--text-color);
+}
+
+main section{
+    width: 100%;
+}
+
+main section > img{
+    display: block;
+    width: 30vw;
+    height: auto;
+    max-width: 124px;
+    max-height: 124px;
+}
+
+main > article {
+    width: 100%;
+    margin: auto auto;
+    background-color: var(--nav-image-bg-color);
+    padding: 3em;
+}
+
+main > a{
+    width: 100%;
+}
+
+.responsive-table{
+    overflow-x: auto;
+}
+
+article {
+    overflow: hidden;
+}
+
+form > * {
+    display: block;
+    margin: 1em;
+}
+
+form a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: .5em;
+    background-color: var(--button-color);
+    border: var(--border-color) solid 1px;
+}
+
+footer{
+    display: flex;
+    background: var(--footer-background);
+    padding: .5em;
+    flex-shrink: 0;
+    color: var(--text-color);
+}
+
+footer>*:nth-child(2) {
+    flex: 1;
+    margin-left: 10vw;
+    border-left: solid 1px var(--border-color);
+}
+
+footer img {
+    height: 10vw;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+

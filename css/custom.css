@@ -76,13 +76,3 @@ main section:hover {
         transform: scale(1.05);
     }
 }
-
-/*Mobile*/
-@media screen and (max-width:1080px) {
-    main{
-        margin-top: 70px !important;
-    }
-    .white-background{
-        margin-top: 85px !important;
-    }
-}

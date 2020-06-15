@@ -64,6 +64,7 @@ nav {
 /*Mobile*/
 @media screen and (max-width:1080px) {
     main section{
+        width: 95% !important;
         margin: 1em auto;
     }
 }
